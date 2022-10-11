@@ -8,6 +8,8 @@ Feel free to submit pull request if you see any mistakes in the code, or would l
 
 ## How to use
 
+0. Below is the instruction on how to pull the project, but actually you could just copy the content of test_bst.c and paste it in your own test_bst.c and be done.
+
 1. Go to the place you work on your assignment
 ![img1](img/1.png?raw=true)
 
