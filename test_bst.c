@@ -53,14 +53,15 @@ int main() {
     assert(n1->right->right->value == 3);
     printf("test passed\n");
 
-    printf("CTC3: Test numberLeaves correct, n1 should have 3 leaves\n");
-    assert(numberLeaves(n1) == 3);
+    printf("CTC3: Test numberLeaves correct, n1 should have 2 leaves\n");
+    // leaf node means node with no children
+    assert(numberLeaves(n1) == 2);
     printf("test passed\n");
 
     printf("CTC4: Test adding a duplicate node, should not add anything and return NULL\n");
     n3 = addNode(n1, 3);
     assert(n3 == NULL);
-    assert(numberLeaves(n1) == 3);
+    assert(numberLeaves(n1) == 2);
     printf("test passed\n");
 
     printf("CTC5: Test nodeDepth normal case\n");
