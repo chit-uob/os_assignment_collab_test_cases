@@ -10,6 +10,8 @@ Feel free to submit pull request if you see any mistakes in the code, or would l
 
 0. Below is the instruction on how to pull the project, but actually you could just copy the content of test_bst.c and paste it in your own test_bst.c and be done.
 
+0.5. Please regularly update this, there might be changes made to fix the test cases, so you should get the newest version by running `git pull` in the folder.
+
 1. Go to the place you work on your assignment
 ![img1](img/1.png?raw=true)
 
