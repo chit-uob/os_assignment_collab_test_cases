@@ -34,6 +34,10 @@ Afterwards, you will get this:
 8. Do `./test.sh` to run the new tests
 ![img8](img/8.png?raw=true)
 
+## Contribution
 
+To add test cases or fix bugs, please submit a pull request
 
+## How it works
 
+The shell script compiles the code using gcc, then uses valgrind to check for memory leak, then runs the program again to check output
