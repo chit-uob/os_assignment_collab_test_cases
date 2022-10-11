@@ -8,3 +8,6 @@ Feel free to submit pull request if you see any mistakes in the code, or would l
 
 ## How to use
 
+![img1](https://www.github.com/chit-uob/os_assignment_collab_test_cases/blob/master/img/1.png)
+
+
