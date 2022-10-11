@@ -16,14 +16,14 @@ int main() {
     a = addNode(NULL, 1);
     b = addNode(a, 2);
     displaySubtree(a);
-    printf("-\nthe output should be\n2\n1\n-\n");
+    printf("-\nthe output should be\n1\n2\n-\n");
 
     printf("Original test case 3: testing numberLeaves\n");
     int c = numberLeaves(a);
     assert(c == 1);
     printf("test passed\n");
 
-    printf("Original test case 3: testing nnodeDepth\n");
+    printf("Original test case 3: testing nodeDepth\n");
     c = nodeDepth(a, b);
     assert(c == 1);
     printf("test passed\n");
