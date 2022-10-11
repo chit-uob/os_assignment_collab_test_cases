@@ -11,7 +11,7 @@ Feel free to submit pull request if you see any mistakes in the code, or would l
 1. Go to the place you work on your assignment
 ![img1](img/1.png?raw=true)
 
-2. Delete the test_bst.c (DO NOT DELETE bst.c, if you accidentally deleted it, ...)
+2. Delete the test_bst.c (DO NOT DELETE bst.c, if you accidentally deleted it, [get it back in the trash folder](https://help.ubuntu.com/stable/ubuntu-help/files-recover.html.en#:~:text=To%20restore%20a%20file%20from%20the%20Trash%3A&text=Click%20on%20Files%20to%20open,on%20it%20and%20select%20Restore.))
 ![img2](img/2.png?raw=true)
 
 3. Right click to open terminal
