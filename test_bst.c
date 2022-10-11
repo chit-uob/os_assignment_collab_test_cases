@@ -58,10 +58,33 @@ int main() {
     printf("test passed\n");
 
     printf("CTC4: Test adding a duplicate node, should not add anything and return NULL\n");
-    n2 = addNode(n1, 3);
-    assert(n2 == NULL);
+    n3 = addNode(n1, 3);
+    assert(n3 == NULL);
     assert(numberLeaves(n1) == 3);
     printf("test passed\n");
+
+    printf("CTC5: Test nodeDepth normal case\n");
+    c = nodeDepth(n1, n2);
+    assert(c == 2);
+    printf("test passed\n");
+
+    printf("CTC5: Test nodeDepth case when node is not inside root\n");
+    c = nodeDepth(n1->left, n2);
+    assert(c == -1);
+    printf("test passed\n");
+
+    printf("CTC6: Test displaySubtree\n");
+    displaySubtree(n1);
+    printf("-\nthe output should be\n3\n4\n5\n6\n-\n");
+
+    printf("CTC7: Test removeNode, remove 6\n");
+    n2 = removeNode(n1, 6);
+    assert(n2 == n1);
+    assert(n1->left == NULL);
+    printf("test passed\n");
+
+    printf("Removing the entire tree to prevent memory leak\n");
+    a = removeSubtree(n1, 5);
 
     return 0;
 }
