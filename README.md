@@ -9,7 +9,7 @@ Feel free to submit pull request if you see any mistakes in the code, or would l
 ## How to use
 
 1. Go to the place you work on your assignment
-![img1](https://www.github.com/chit-uob/os_assignment_collab_test_cases/blob/master/img/1.png?raw=true)
+![img1](img/1.png?raw=true)
 
 2. Delete the test_bst.c (DO NOT DELETE bst.c, if you accidentally deleted it, ...)
 ![img2](https://www.github.com/chit-uob/os_assignment_collab_test_cases/blob/master/img/2.png?raw=true)
