@@ -1,16 +1,20 @@
-# OS Assignment 1 test cases extended v1.0.1
+# OS Assignment 1 test cases extended v1.0.2
 
 This project is to provide extra test cases for students to test if their program is working as intended.
 
 It is permitted by TA quote "you're allowed to collaborate on making more test cases", [message link](https://teams.microsoft.com/l/message/19:X4s8E0_rKnDkLOXarakhgS9dRqbryNlineShrclhEbI1@thread.tacv2/1665399080178?tenantId=b024cacf-dede-4241-a15c-3c97d553e9f3&groupId=ced72313-182f-4125-8a0f-b82a34f05299&parentMessageId=1665316022938&teamName=Operating%20Systems%20and%20Systems%20Programming%20-%202022-2023&channelName=General&createdTime=1665399080178&allowXTenantAccess=false).
 
-Feel free to submit pull request if you see any mistakes in the code, or would like to add more test cases. PLEASE DO NOT ACCIDENTALLY COMMIT YOUR bst.c
+## Important info
+
+- These test cases are made by students. By using this, you agree that the test cases are only for reference, we do not hold any responsibility if there are any mistakes or errors. If you spotted a mistake or want to add test cases, feel free to let my know by creating an issue or submiting a pull request. PLEASE DO NOT ACCIDENTALLY COMMIT YOUR bst.c
+
+- Please regularly update this, there might be changes made to fix the test cases, so you should get the newest version by running `git pull` in the folder.
+
+- You need to use the same order for struct attributes (left, right, value) inside `test_bst.c` and `bst.c`. In this repo, we will standardize by using the left -> right -> value.
 
 ## How to use
 
 0. Below is the instruction on how to pull the project, but actually you could just copy the content of test_bst.c and paste it in your own test_bst.c and be done.
-
-0.5. Please regularly update this, there might be changes made to fix the test cases, so you should get the newest version by running `git pull` in the folder.
 
 1. Go to the place you work on your assignment
 ![img1](img/1.png?raw=true)
