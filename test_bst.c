@@ -4,6 +4,7 @@
 #include "bst.h"
 
 struct _Node {
+    // The order of attributes here, namely left, right and value, need to be in the same order as in the bst.c
     struct _Node* left;
     struct _Node* right;
     int value;
