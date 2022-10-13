@@ -83,6 +83,31 @@ int main() {
     n2 = removeNode(n1, 6);
     assert(n2 == n1);
     assert(n1->left == NULL);
+    assert(numberLeaves(n1) == 1);
+    printf("test passed\n");
+
+    printf("CTC8, Test removeNode, 1 right child, remove 4\n");
+    n2 = removeNode(n1, 4);
+    assert(n2 == n1);
+    assert(n1->right->value == 3);
+    printf("test passed\n");
+
+    printf("CTC9, Test removeNode, 1 left child, add 4 remove 3\n");
+    n3 = addNode(n1, 4);
+    n2 = removeNode(n1, 3);
+    assert(n2 == n1);
+    assert(n1->right->value == 4);
+    printf("test passed\n");
+
+    printf("CTC10, Test removeNode, 2 child, add 10, 12, 8, then remove 10\n");
+    n3 = addNode(n1, 10);
+    n3 = addNode(n1, 12);
+    n3 = addNode(n1, 8);
+    n2 = removeNode(n1, 10);
+    assert(n2 == n1);
+    // To accommodate both inorder successor and inorder predecessor
+    assert(n1->left->left->value == 8 || n1->left->left->value == 12);
+    assert(numberLeaves(n1) == 2);
     printf("test passed\n");
 
     printf("Removing the entire tree to prevent memory leak\n");
