@@ -114,7 +114,7 @@ int main() {
     printf("Removing the entire tree to prevent memory leak\n");
     a = removeSubtree(n1, 5);
 
-  printf("\nNow we are on to Extra Test Cases (ETC)")
+  printf("\nNow we are on to Extra Test Cases (ETC)\n");
 
   Node  *newC, * d, * e, * f, * g, * h, * i, * j, * k;
   Node * w, * x, * y, * z;
