@@ -31,7 +31,7 @@ int main() {
     assert(c == 1);
     printf("test passed\n");
 
-    printf("Original test case 3: testing nodeDepth\n");
+    printf("Original test case 4: testing nodeDepth\n");
     c = nodeDepth(a, b);
     assert(c == 1);
     printf("test passed\n");
