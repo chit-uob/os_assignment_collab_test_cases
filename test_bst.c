@@ -101,6 +101,7 @@ int main() {
     printf("test passed\n");
 
     printf("CTC10, Test removeNode, 2 child, add 10, 12, 8, then remove 10\n");
+    n3 = addNode(n1, 6);
     n3 = addNode(n1, 10);
     n3 = addNode(n1, 12);
     n3 = addNode(n1, 8);
