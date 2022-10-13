@@ -6,9 +6,9 @@
 struct _Node {
     // In order for the test to work, the order of left, right and value must be the same with bst.c
     // To standardize, let's all use left, right then value
-  struct _Node* left;
-  struct _Node* right;
-  int value;
+    struct _Node *left;
+    struct _Node *right;
+    int value;
 };
 
 int main() {
@@ -114,134 +114,134 @@ int main() {
     printf("Removing the entire tree to prevent memory leak\n");
     a = removeSubtree(n1, 5);
 
-  printf("\nNow we are on to Extra Test Cases (ETC)\n");
+    printf("\nNow we are on to Extra Test Cases (ETC)\n");
 
-  Node  *newC, * d, * e, * f, * g, * h, * i, * j, * k;
-  Node * w, * x, * y, * z;
-  Node * test1, * test2, * test3, * test4, * test6, * test7;
+    Node *newC, *d, *e, *f, *g, *h, *i, *j, *k;
+    Node *w, *x, *y, *z;
+    Node *test1, *test2, *test3, *test4, *test6, *test7;
 
-  //
-  //add
-  //
+    //
+    //add
+    //
 
-  a = addNode(NULL, 8);
-  b = addNode(a, 3);
-  newC = addNode(a, 11);
-  d = addNode(a, 1);
-  e = addNode(a, 6);
-  f = addNode(a, 9);
-  g = addNode(a, 14);
-  h = addNode(a, 7);
-  i = addNode(a, 10);
-  j = addNode(a, 12);
-  k = addNode(a, 15);
+    a = addNode(NULL, 8);
+    b = addNode(a, 3);
+    newC = addNode(a, 11);
+    d = addNode(a, 1);
+    e = addNode(a, 6);
+    f = addNode(a, 9);
+    g = addNode(a, 14);
+    h = addNode(a, 7);
+    i = addNode(a, 10);
+    j = addNode(a, 12);
+    k = addNode(a, 15);
 
-  x = addNode(NULL, 90);
+    x = addNode(NULL, 90);
 
-  //
-  //subtree
-  //
+    //
+    //subtree
+    //
 
-  printf("ETC1. Starting test, checking displaySubtree works: \n\n");
-  printf("Should print:\n1\n3\n6\n7\n8\n9\n10\n11\n12\n14\n15\n\n");
+    printf("ETC1. Starting test, checking displaySubtree works: \n\n");
+    printf("Should print:\n1\n3\n6\n7\n8\n9\n10\n11\n12\n14\n15\n\n");
 
-  printf("Prints \n");
-  displaySubtree(a);
+    printf("Prints \n");
+    displaySubtree(a);
 
-  //
-  //number leaves
-  //
+    //
+    //number leaves
+    //
 
-  printf("\nETC2. Testing numberLeaves\n");
+    printf("\nETC2. Testing numberLeaves\n");
 
-  if (numberLeaves(a) == 5) {
-    printf("PASS: Tree has 5 leaves\n");
-  } else {
-    printf("FAIL: Tree has 5 leaves\n");
-  }
+    if (numberLeaves(a) == 5) {
+        printf("PASS: Tree has 5 leaves\n");
+    } else {
+        printf("FAIL: Tree has 5 leaves\n");
+    }
 
-  //
-  //node depth
-  //
+    //
+    //node depth
+    //
 
-  printf("\nETC3. Testing nodeDepth\n");
+    printf("\nETC3. Testing nodeDepth\n");
 
-  if (nodeDepth(a, a) == 0) {
-    printf("PASS: Root has depth of 0\n");
-  } else if (nodeDepth(a, a) != 0) {
-    printf("FAIL: Root should have depth of 0\n");
-  }
+    if (nodeDepth(a, a) == 0) {
+        printf("PASS: Root has depth of 0\n");
+    } else if (nodeDepth(a, a) != 0) {
+        printf("FAIL: Root should have depth of 0\n");
+    }
 
-  if (nodeDepth(a, b) == 1) {
-    printf("PASS: 3 has have depth of 1\n");
-  } else if (nodeDepth(a, b) != 1) {
-    printf("FAIL: 3 should have depth of 1\n");
-  }
+    if (nodeDepth(a, b) == 1) {
+        printf("PASS: 3 has have depth of 1\n");
+    } else if (nodeDepth(a, b) != 1) {
+        printf("FAIL: 3 should have depth of 1\n");
+    }
 
-  if (nodeDepth(a, k) == 3) {
-    printf("PASS: 15 have depth of 3\n");
-  } else if (nodeDepth(a, k) != 3) {
-    printf("FAIL: 15 should have depth of 3\n");
-  }
+    if (nodeDepth(a, k) == 3) {
+        printf("PASS: 15 have depth of 3\n");
+    } else if (nodeDepth(a, k) != 3) {
+        printf("FAIL: 15 should have depth of 3\n");
+    }
 
-  if (nodeDepth(a, x) == -1) {
-    printf("PASS: 90 is not in tree\n");
-  } else if (nodeDepth(a, k) != -1) {
-    printf("FAIL: 90 is not in tree, should return -1\n");
-  }
+    if (nodeDepth(a, x) == -1) {
+        printf("PASS: 90 is not in tree\n");
+    } else if (nodeDepth(a, k) != -1) {
+        printf("FAIL: 90 is not in tree, should return -1\n");
+    }
 
-  if (nodeDepth(a, NULL) == -1) {
-    printf("PASS: NULL cant be in the tree\n");
-  } else if (nodeDepth(a, NULL) != -1) {
-    printf("FAIL: NULL cant be in the tree, should return -1\n");
-  }
+    if (nodeDepth(a, NULL) == -1) {
+        printf("PASS: NULL cant be in the tree\n");
+    } else if (nodeDepth(a, NULL) != -1) {
+        printf("FAIL: NULL cant be in the tree, should return -1\n");
+    }
 
-  if (nodeDepth(NULL, NULL) == -1) {
-    printf("PASS: NULL cant be in the NULL tree\n");
-  } else if (nodeDepth(NULL, NULL) != -1) {
-    printf("FAIL: NULL cant be in the NULL tree, should return -1\n");
-  }
+    if (nodeDepth(NULL, NULL) == -1) {
+        printf("PASS: NULL cant be in the NULL tree\n");
+    } else if (nodeDepth(NULL, NULL) != -1) {
+        printf("FAIL: NULL cant be in the NULL tree, should return -1\n");
+    }
 
-  //
-  //Deletion
-  //
+    //
+    //Deletion
+    //
 
-  printf("\nETC4. Check that the pointers are the same \n");
-  y = removeNode(a, 11);
-  if (y == a) {
-    printf("PASS: Pointers match\n");
-  } else {
-    printf("FAIL: Pointers didn't match\n");
-  }
+    printf("\nETC4. Check that the pointers are the same \n");
+    y = removeNode(a, 11);
+    if (y == a) {
+        printf("PASS: Pointers match\n");
+    } else {
+        printf("FAIL: Pointers didn't match\n");
+    }
 
-  printf("\nETC5. Testing removeNode worked, should print:\n1\n3\n6\n7\n8\n9\n10\n12\n14\n15\n\nPrints\n");
-  displaySubtree(a);
+    printf("\nETC5. Testing removeNode worked, should print:\n1\n3\n6\n7\n8\n9\n10\n12\n14\n15\n\nPrints\n");
+    displaySubtree(a);
 
-  printf("\nETC6. Testing numberLeaves\n");
-  if (numberLeaves(a) == 4 || numberLeaves(a) == 5) {
-    printf("PASS: Tree has 4 or 5 leaves\n");
-  } else {
-    printf("FAIL: Tree does not have 4 or 5 leaves\n");
-  }
+    printf("\nETC6. Testing numberLeaves\n");
+    if (numberLeaves(a) == 4 || numberLeaves(a) == 5) {
+        printf("PASS: Tree has 4 or 5 leaves\n");
+    } else {
+        printf("FAIL: Tree does not have 4 or 5 leaves\n");
+    }
 
-  printf("\nTesting removeNode, removing root 8\n");
-  z = removeNode(a, 8);
+    printf("\nTesting removeNode, removing root 8\n");
+    z = removeNode(a, 8);
 
-  printf("Should print:\n1\n3\n6\n7\n9\n10\n12\n14\n15\n\nPrints\n");
-  displaySubtree(z);
+    printf("Should print:\n1\n3\n6\n7\n9\n10\n12\n14\n15\n\nPrints\n");
+    displaySubtree(z);
 
-  printf("\nETC7. Testing numberLeaves with new root\n");
-  if (numberLeaves(z) == 4 || numberLeaves(z) == 5) {
-      printf("PASS: Tree has 4 or 5 leaves\n");
-  } else {
-      printf("FAIL: Tree does not have 4 or 5 leaves\n");
-  }
+    printf("\nETC7. Testing numberLeaves with new root\n");
+    if (numberLeaves(z) == 4 || numberLeaves(z) == 5) {
+        printf("PASS: Tree has 4 or 5 leaves\n");
+    } else {
+        printf("FAIL: Tree does not have 4 or 5 leaves\n");
+    }
 
     removeSubtree(z, z->value);
     removeNode(x, x->value);
 
 
-  // Need to rebuild tree, because inorder successor or inorder predecessor causes different output
+    // Need to rebuild tree, because inorder successor or inorder predecessor causes different output
 //  printf("\n8. Removing Subtree, checking that pointers equal\n");
 //  test1 = removeSubtree(z, 12);
 //
@@ -314,5 +314,5 @@ int main() {
 //    printf("FAIL: Pointer is not null \n");
 //  }
 
-  return 0;
+    return 0;
 }
